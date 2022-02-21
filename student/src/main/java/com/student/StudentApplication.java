@@ -17,6 +17,7 @@ public class StudentApplication implements CommandLineRunner {
 	@Autowired
 	private StudentRero Repo;
 	
+
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
 	
