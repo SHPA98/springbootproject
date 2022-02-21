@@ -1,0 +1,5 @@
+package com.student.Repostry;
+
+public interface StudentRero {
+
+}

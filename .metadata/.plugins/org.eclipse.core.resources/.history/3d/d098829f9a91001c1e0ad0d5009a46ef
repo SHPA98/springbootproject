@@ -1,0 +1,47 @@
+package com.student;
+
+import java.util.Iterator;
+
+import org.apache.tomcat.jni.Shapa8d;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.student.Repostry.StudentRero;
+
+@SpringBootApplication
+public class StudentApplication implements CommandLineRunner {
+
+	@Autowired
+	private StudentRero Repo;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(StudentApplication.class, args);
+	
+	
+	
+	}
+
+	
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		
+		Repo.save(new Shapa (20,"pawan"));
+		Repo.save(new Shapa (22,"sharma"));
+		Repo.save(new Shapa (1997,"subhm"));
+		Repo.save(new Shapa (24,"gupta"));
+		
+		 java.util.List<Shapa> Shapa8d = Repo.findAll();
+		 
+		 Iterator<Shapa> itr=Shapa8d.iterator();
+		 while (itr.hasNext()) {
+		
+			 System.out.println(itr.next().toString());
+		}
+		 
+	}
+	
+}

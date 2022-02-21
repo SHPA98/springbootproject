@@ -1,0 +1,7 @@
+package com.student.Repostry;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StudentRero extends JpaRepository<Shapa8d, Integer> {
+
+}

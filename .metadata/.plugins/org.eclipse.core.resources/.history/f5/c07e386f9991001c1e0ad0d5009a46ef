@@ -1,0 +1,50 @@
+package com.student.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+
+@Table(name="userpawan")
+public class Shapa8d {
+	@Id
+	private int id ;
+	private String name ;
+
+	
+	public Shapa8d() {
+		super();
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	
+	public Shapa8d(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Shapa8d [id=" + id + ", name=" + name + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+	
+	
+}
