@@ -26,14 +26,14 @@ public class SpringbootbasicApplication {
 	
 		UserRepositriy userRepositriy = context.getBean(UserRepositriy.class);
 	
-//		User user =new User();
-//		user.setName("pawan");
-//		user.setCity("bihar");
-//		user.setStatue("java &python programmer");
-//		
-//	     user2.setName("Amit");
-//		 User user2 = userRepositriy.save(user);
-//		 System.out.println(user2);
+		User user =new User();
+		user.setName("pawan");
+		user.setCity("bihar");
+		user.setStatue("java &python programmer");
+		
+	     user2.setName("Amit");
+		 User user2 = userRepositriy.save(user);
+		 System.out.println(user2);
 	
 	//create Object of User
 		 User user1 =new User();
